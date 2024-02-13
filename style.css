@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url(Images/bg.png);
+}
+
+/* Header starts here. */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 7, 30, 0.7),rgba(4,9,30,0.7)),url(Images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 10px 50px 10px 50px;
+    justify-content: space-between;
+    align-items: center;
+    background: #106e63;
+}
+
+nav img{
+    width: 150px;
+    padding-top: 15px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.dropdown{
+    left: 0;
+    top: 41px;
+    position: absolute;
+    display: none;
+    overflow: scroll;
+    max-height: 200px;
+    width: auto;
+    text-align: center;
+    background: #106e63;
+}
+
+.nav-links ul li:hover ul{
+    display: flex;
+    flex-direction: column;    
+}
+
+.nav-links li:hover{
+    background: #2d9395;
+    border-radius: 5px;
+}
+
+.dropdown li{
+    line-height: 1;
+    width: auto;
+}
+                    
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #ffffff;
+    background: #0d583a;
+    transition: 0.4s;
+}
+
+@media (max-width:700px) {
+    .text-box h1{
+        font-size: 40px;
+    }
+}
+/* Header ends here. */
+
+/* Courses starts here. */
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: #595959;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col{
+    flex-basis: 31%;
+    background: rgba(198, 255, 225, 0.525);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.course-col:hover{
+    box-shadow: 0 0 15px 0 rgba(22, 97, 58, 0.671);
+}
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+/* Courses ends here. */
+
+/* Facilities starts here. */
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.facilities-col{
+    background: rgba(198, 255, 225, 0.525);
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.facilities-col p{
+    padding: 5px;
+    text-align: left;
+}
+
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.facilities-col:hover{
+    box-shadow: 0 0 15px 0 rgba(20, 122, 68, 0.669);
+}
+
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: rgba(198, 255, 225, 0.525);
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.testimonial-col img{
+    height: 40px;
+    margin-right: 30px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+.testimonial-col p{
+    padding: 0;
+}
+
+.testimonial-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+@media(max-width: 700px) {
+    .testimonial-col img{
+        margin-left: 0;
+        margin-right: 15px;
+    }    
+}
+/* Facilities ends here. */
+
+/* Contact starts here. */
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px ;
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+/* Contact ends here. */
+
+/* Footer starts here. */
+.footer{
+    width: 100%;
+    background: rgba(198, 255, 225, 0.525);
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer p{
+    color: #595959;
+    font-size: 15px;
+}
+
+.footer h4{
+    color: #595959;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.icons .fa{
+    color: #1a1110;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+/* Footer ends here. */
+
+
